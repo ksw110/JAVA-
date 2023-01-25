@@ -1,0 +1,1 @@
+select * from MC_MEMBER;
