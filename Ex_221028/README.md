@@ -1,18 +1,18 @@
 ### Ex01_출력 <br>
-System.out.println(); 명령어로 콘솔창에 띄울수 있다.<br>
+	System.out.println(); 명령어로 콘솔창에 띄울수 있다.
 ### Ex02_입력 <br>
-// 키보드를 통해 (콘솔창을 통해) 데이터를 입력!<br>
-// Scanner<br>
-// import (불러오기) : 외부에 있는 도구 (라이브러리)를 사용하기 위해 설정<br>
-// 문장 완성후 Scanner 자리에 마우스 커서 놓고 import 클릭 또는 sc + Ctrl + Space -> 자동완성<br>
-// syso = System.out.println(); ctrl+space 출력 자동완성<br>
-Scanner sc = new Scanner(System.in);<br>
-		// 입력이기 떄문에 in<br>
-	
-// sc 안에있는 기능을 사용하겠다 sc.<br>
-// 콘솔창에 우리가 입력한 정수를 받아오자!<br>
-// Int(자료형) = 정수 (변하는수) int a = 3;<br>
-// final(상수) = 한번 넣으면 변하지않는수 final int a = 3;<br>
+	// 키보드를 통해 (콘솔창을 통해) 데이터를 입력!
+	// Scanner
+	// import (불러오기) : 외부에 있는 도구 (라이브러리)를 사용하기 위해 설정
+	// 문장 완성후 Scanner 자리에 마우스 커서 놓고 import 클릭 또는 sc + Ctrl + Space -> 자동완성
+	// syso = System.out.println(); ctrl+space 출력 자동완성
+	Scanner sc = new Scanner(System.in);
+			// 입력이기 떄문에 in
+
+	// sc 안에있는 기능을 사용하겠다 sc.
+	// 콘솔창에 우리가 입력한 정수를 받아오자!
+	// Int(자료형) = 정수 (변하는수) int a = 3;
+	// final(상수) = 한번 넣으면 변하지않는수 final int a = 3;
     
     // 자바 프로그래머들에게 권장하는 규칭
     // 1. 클래스 이름 시작은 대문자
@@ -70,35 +70,35 @@ Scanner sc = new Scanner(System.in);<br>
     // 기본변수는 소문자로 시작하지만 레퍼런스는 대문자로 시작한다
     // 문자열을 담는 타입 -> String
 ### 형변환<br>
-// 자동 형변환 , 묵시적 형변환<br>
-int num = 5;<br>
-double num2 = num;<br>
-정수형을 실수형으로 변환하여 5.0으로 출력이됨<br>
+	// 자동 형변환 , 묵시적 형변환
+	int num = 5;
+	double num2 = num;
+	정수형을 실수형으로 변환하여 5.0으로 출력이됨
 
-// 강제 형변환 , 명시적 형변환<br>
-double num3 = 5.6;<br>
-int num4 = (int) num3; // 강제적으로 형변환 정수로 바뀌기때문에 소수점은 출력하지않음<br>
-byte num1 = 3; // -128 ~ 127 (256가지)
-int num2 = 8000;
+	// 강제 형변환 , 명시적 형변환<br>
+	double num3 = 5.6;<br>
+	int num4 = (int) num3; // 강제적으로 형변환 정수로 바뀌기때문에 소수점은 출력하지않음
+	byte num1 = 3; // -128 ~ 127 (256가지)
+	int num2 = 8000;
 
-num1 = (byte) num2;
+	num1 = (byte) num2;
 
-int num3 = 128; // 256씩 더하기
-num1 = (byte) num3;
-// 값이 양의 방향으로 넘어가는 현상 : Overflow
+	int num3 = 128; // 256씩 더하기
+	num1 = (byte) num3;
+	// 값이 양의 방향으로 넘어가는 현상 : Overflow
 
-int num4 = -129;
-num1 = (byte)num4;
-// 값이 음의 방향으로 넘어가는 현상 : Underflow
+	int num4 = -129;
+	num1 = (byte)num4;
+	// 값이 음의 방향으로 넘어가는 현상 : Underflow
 
-int num5 =30000;
-short num6 = 0; // -32768 ~ 32767
+	int num5 =30000;
+	short num6 = 0; // -32768 ~ 32767
 
-num6 = (short)num5; //들어있는 값과는 상관없이, 자료형이 일치하여야함 ->명시적형변환
+	num6 = (short)num5; //들어있는 값과는 상관없이, 자료형이 일치하여야함 ->명시적형변환
 
-short num7 = 3;
-int num8 = 90000;
-num7 = (short)num8;
+	short num7 = 3;
+	int num8 = 90000;
+	num7 = (short)num8;
 
-String num = "10";
-//Integer.parseInt("문자열") --> 문자열을 숫자 타입으로 바꿔주세요!
+	String num = "10";
+	//Integer.parseInt("문자열") --> 문자열을 숫자 타입으로 바꿔주세요!
